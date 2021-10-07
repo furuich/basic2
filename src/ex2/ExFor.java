@@ -20,6 +20,8 @@ public class ExFor {
         System.out.println(max);
         System.out.println(min);
 
+        //以下オリジナル。入力された言葉（scanner）を配列要素ないで検索して表示したい（if？すぃｔｃｈ？）
+
     char[] array2 ={'A','b','g','K'};
 
     char thing=array2[0]; //比較対象
