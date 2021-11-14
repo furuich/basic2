@@ -25,6 +25,7 @@ public class ExFor {
     char thing=array2[0]; //比較対象
 
 
+
     for (char need:array2) {
             if (need==thing);
         System.out.println(thing+"同じのあったよ");
