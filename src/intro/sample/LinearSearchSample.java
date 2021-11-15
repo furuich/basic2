@@ -28,5 +28,26 @@ public class LinearSearchSample {
 
         //未発見の場合の表示
         if (unDiscovered) System.out.println("探索値:" + searchValue + "は見つかりませんでした");
+
+    //while
+
+        int i2 = 0;
+        while (i2 < array.length ) {
+            if (array[i2] == searchValue) {
+                System.out.println("探索値:" + searchValue);
+                System.out.println("配列の要素:" + i2 + "に存在します");
+                unDiscovered = false;//未発見ではないことの設定
+                break;//探索値を発見したので反復を中断
+            }
+            i2++;
+        }
+
+        //未発見の場合の表示
+        if (unDiscovered) System.out.println("探索値:" + searchValue + "は見つかりませんでした");
     }
-}
+
+
+
+
+    }
+

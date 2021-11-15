@@ -24,5 +24,34 @@ public class SumSample3 {
 
         //合計を表示
         System.out.println("配列の合計:" + sum);
+
+        //for i
+        int sum2 =0;
+
+        for (int i2 = 0; i2 < array.length; i2++) {
+            sum2 += array[i2];//合計に加算
+        }
+
+        //配列の内容を表示
+        //https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/util/Arrays.html#toString(int%5B%5D)
+        System.out.println(Arrays.toString(array));
+
+        //合計を表示
+        System.out.println("配列の合計:" + sum2);
+
+
+       //拡張for
+        int sum3 =0;
+
+        for (int value:array) {
+            sum3 += value;//合計に加算
+        }
+
+        //配列の内容を表示
+        //https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/util/Arrays.html#toString(int%5B%5D)
+        System.out.println(Arrays.toString(array));
+
+        //合計を表示
+        System.out.println("配列の合計:" + sum3);
     }
 }

@@ -24,6 +24,20 @@ public class MaxSample3 {
 
         //最大値を表示
         System.out.println("配列の最大値:" + max);
+
+
+        //forで
+        //拡張for（インデックスなし）なので、i＋＋はいらない　
+
+        int[] array2 = {10,45,1,23,5,80};
+        int max2 = array2[0];
+
+        for (int m : array2){
+            if (max2 < m);
+            max2 = m ;
+        }
+        System.out.println(Arrays.toString(array2));
+        System.out.println("配列の最大値(for)"+max2);
     }
 }
 
