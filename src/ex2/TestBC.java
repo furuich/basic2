@@ -45,11 +45,26 @@ class TestBC {
         for (int i2 = 1; i2 <= 5; i2++){
             for (int j2 =1; j2 <= 5 ; j2++) {
                 System.out.println(i2 * j2);
-                if (((i2 * j2) % 3) == 0) {continue;}
+                if (((i2 * j2) % 3) == 0) continue;
                 System.out.println("/");
             }
                 }
-            }
+
+    char a = '\u0000';
+        char b = '\uffff';
+        char c = '\u0021';
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+
+        boolean b1 = false, b2= true;
+        if(!((b1&&b2)||b2)){ //!を付けると、条件が成立しない時に実行になる
+            System.out.println("    ");
+        }else{
+            System.out.println("   bbb");
+        }
+
+    }
         }
 
 
